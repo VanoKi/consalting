@@ -1993,3 +1993,370 @@ a:focus-visible, button:focus-visible {
         padding: 26px 0 0;
     }
 }
+
+/* Consistent section styling */
+.help {
+    padding: 0 0 32px;
+    background: var(--color-surface);
+}
+
+.help__wrapper {
+    width: min(100%, 1200px);
+    margin: 0 auto;
+}
+
+.help__text {
+    align-items: flex-start;
+    margin: 0;
+    padding: 88px 24px 36px;
+}
+
+.help__text--left {
+    position: static;
+    margin: 0 0 14px;
+    padding: 0;
+    color: var(--color-accent);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.help__text--center {
+    max-width: 720px;
+    margin: 16px 0 0;
+    padding: 0;
+    color: var(--color-text-muted);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.help__text--center::after {
+    content: none;
+}
+
+.help__text--bottom {
+    padding: 28px 0 0;
+    color: var(--color-ink);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+}
+
+.help__block {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-auto-rows: minmax(230px, auto);
+    gap: 16px;
+    width: min(calc(100% - 48px), 1152px);
+    height: auto;
+    margin: 0 auto 80px;
+    overflow: visible;
+}
+
+.help__block > div {
+    min-width: 0;
+    border: 1px solid var(--color-border);
+    border-radius: 18px;
+    background: var(--color-surface-muted);
+}
+
+.help__block > div:nth-child(even) {
+    background: var(--color-surface);
+}
+
+.help__word {
+    padding: 98px 18px 24px;
+    color: var(--color-ink);
+    font-size: clamp(20px, 2vw, 26px);
+    line-height: 1.25;
+}
+
+.help__word::after {
+    top: 76px;
+    left: 28px;
+    right: 28px;
+    background: var(--color-border);
+}
+
+.help__word::before {
+    top: 108px;
+    left: 34px;
+    background: var(--color-accent);
+}
+
+.therapy {
+    padding: 12px 24px 72px;
+    background: var(--color-surface);
+}
+
+.therapy__wrapper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: auto;
+    gap: 18px;
+    width: min(100%, 1152px);
+    margin: 0 auto;
+}
+
+.therapy__block {
+    min-width: 0;
+    border: 1px solid var(--color-border);
+    border-radius: 18px;
+    padding: 30px;
+    background: var(--color-surface-muted);
+}
+
+.therapy__subtitle {
+    margin-bottom: 14px;
+    color: var(--color-ink);
+    font-size: 24px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+}
+
+.therapy__text {
+    max-width: 38ch;
+    color: var(--color-text-muted);
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+.information {
+    padding: 72px 24px;
+    background: var(--color-surface);
+}
+
+.information__wrapper {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: clamp(32px, 5vw, 72px);
+    width: min(100%, 1152px);
+    margin: 0 auto;
+}
+
+.information__img,
+.information__img picture {
+    display: block;
+    min-width: 0;
+    width: 100%;
+}
+
+.information__image {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: clamp(280px, 34vw, 430px);
+    border-radius: 24px 24px 80px 24px;
+    object-fit: cover;
+}
+
+.information__content {
+    min-width: 0;
+    padding: 0;
+}
+
+.information__text--top {
+    padding: 0;
+    color: var(--color-accent);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.information__text--center {
+    max-width: 62ch;
+    margin: 18px 0 0;
+    color: var(--color-text-muted);
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.chapter {
+    background: var(--color-surface-muted);
+}
+
+.chapter__wrapper {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
+    align-items: center;
+    gap: clamp(32px, 5vw, 72px);
+    width: min(100%, 1200px);
+    height: auto;
+    margin: 0 auto;
+    padding: 72px 24px;
+}
+
+.chapter__wrapper-text {
+    min-width: 0;
+    padding: 0;
+}
+
+.chapter__title {
+    margin: 0;
+    color: var(--color-ink);
+    font-size: clamp(36px, 4.5vw, 52px);
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+}
+
+.chapter__text--center {
+    max-width: 64ch;
+    margin: 22px 0 0;
+    color: var(--color-text-muted);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.chapter__images,
+.chapter__images picture {
+    display: block;
+    min-width: 0;
+    width: 100%;
+}
+
+.chapter__img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: clamp(260px, 30vw, 400px);
+    border-radius: 24px 24px 80px 24px;
+    object-fit: cover;
+}
+
+.footer {
+    background: var(--color-surface);
+}
+
+.footer__wrapper {
+    width: min(100%, 1200px);
+    margin: 0 auto;
+    padding: 52px 24px 44px;
+}
+
+.footer__block {
+    max-width: none;
+    justify-content: flex-start;
+    gap: clamp(48px, 10vw, 140px);
+}
+
+.footer__cell {
+    max-width: 340px;
+    padding: 0;
+}
+
+.footer__title {
+    margin-bottom: 18px;
+    color: var(--color-accent);
+    font-size: 13px;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+}
+
+.footer__text,
+.footer__tel_bottom,
+.footer__text_adress {
+    color: var(--color-text-muted);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer__text_adress,
+.footer__tel_bottom {
+    text-decoration: none;
+}
+
+.footer__tel_bottom:hover,
+.footer__text_adress:hover {
+    color: var(--color-accent);
+}
+
+.footer__bottom {
+    padding: 22px 24px;
+    background: var(--color-ink);
+    text-align: center;
+}
+
+.footer__small {
+    margin: 0;
+    color: var(--color-surface);
+}
+
+@media (max-width: 900px) {
+    .help__block {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .therapy__wrapper {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .information__wrapper,
+    .chapter__wrapper {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .information__image,
+    .chapter__img {
+        height: clamp(260px, 48vw, 380px);
+    }
+}
+
+@media (max-width: 620px) {
+    .help__block,
+    .therapy__wrapper {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .help__block {
+        grid-auto-rows: minmax(170px, auto);
+        width: calc(100% - 40px);
+    }
+
+    .help__word {
+        padding-top: 78px;
+    }
+
+    .help__word::after {
+        top: 56px;
+    }
+
+    .help__word::before {
+        top: 88px;
+    }
+
+    .information,
+    .chapter__wrapper {
+        padding: 48px 20px;
+    }
+
+    .information__image,
+    .chapter__img {
+        height: 260px;
+        border-radius: 20px 20px 64px 20px;
+    }
+
+    .therapy {
+        padding: 0 20px 48px;
+    }
+
+    .therapy__block {
+        padding: 24px;
+    }
+
+    .footer__wrapper {
+        padding: 36px 20px;
+    }
+
+    .footer__block {
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .footer__cell {
+        max-width: none;
+        width: 100%;
+    }
+}
