@@ -2288,10 +2288,9 @@ a:focus-visible, button:focus-visible {
         width: 100%;
     }
 }
-
 /* Directions slider */
 .services-slider {
-    width: min(calc(100% - 48px), 1152px);
+    width: min(calc(100% - 48px), 1200px);
     margin: 0 auto 80px;
 }
 
@@ -2332,8 +2331,8 @@ a:focus-visible, button:focus-visible {
 .services-slider .help__block {
     grid-template-columns: none;
     grid-auto-flow: column;
-    grid-auto-columns: clamp(260px, calc((100% - 32px) / 3), 360px);
-    grid-auto-rows: minmax(230px, auto);
+    grid-auto-columns: clamp(300px, calc((100% - 32px) / 3), 380px);
+    grid-auto-rows: minmax(260px, auto);
     gap: 16px;
     width: 100%;
     height: auto;
@@ -2352,8 +2351,8 @@ a:focus-visible, button:focus-visible {
 }
 
 .services-slider .help__word {
-    padding: 98px 18px 24px;
-    font-size: 24px;
+    padding: 108px 24px 28px;
+    font-size: clamp(24px, 2.3vw, 30px);
 }
 
 @media (max-width: 620px) {
