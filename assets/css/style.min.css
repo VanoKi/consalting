@@ -2457,12 +2457,14 @@ a:focus-visible, button:focus-visible {
 }
 
 .hero__visual {
-    position: relative;
+    position: absolute;
+    grid-column: 2;
+    grid-row: 1;
+    inset: 0;
     display: block;
-    width: 100%;
+    width: auto;
     height: auto;
     min-height: 0;
-    align-self: stretch;
     overflow: hidden;
     border-radius: 24px 24px 80px 24px;
     box-shadow: none;
@@ -2513,6 +2515,11 @@ a:focus-visible, button:focus-visible {
     }
 
     .hero__visual {
+        position: relative;
+        grid-column: 1;
+        grid-row: auto;
+        inset: auto;
+        width: 100%;
         height: min(68vw, 440px);
         min-height: 240px;
         border-radius: 20px 20px 64px 20px;
