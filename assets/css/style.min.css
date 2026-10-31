@@ -2234,6 +2234,18 @@ a:focus-visible, button:focus-visible {
     text-decoration: none;
 }
 
+.footer__contact-link--viber {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer__contact-link--viber img {
+    display: block;
+    width: 18px;
+    height: 18px;
+}
+
 .footer__contact-link:hover {
     color: var(--color-accent);
 }
