@@ -2469,7 +2469,7 @@ a:focus-visible, button:focus-visible {
     z-index: 1;
     inset: 0;
     content: "";
-    background: linear-gradient(90deg, rgba(245, 247, 245, 0.98) 0%, rgba(245, 247, 245, 0.91) 40%, rgba(245, 247, 245, 0.3) 76%, rgba(245, 247, 245, 0.08) 100%);
+    background: linear-gradient(90deg, rgba(245, 247, 245, 0.9) 0%, rgba(245, 247, 245, 0.76) 40%, rgba(245, 247, 245, 0.16) 76%, rgba(245, 247, 245, 0.02) 100%);
 }
 
 .hero__visual > .main__image {
@@ -2491,10 +2491,10 @@ a:focus-visible, button:focus-visible {
     padding: clamp(26px, 4vw, 48px);
     border: 1px solid rgba(255, 255, 255, 0.72);
     border-radius: 24px;
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 18px 54px rgba(38, 54, 79, 0.12);
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.68);
+    box-shadow: 0 12px 36px rgba(38, 54, 79, 0.09);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
 }
 
 @media (max-width: 800px) {
@@ -2504,7 +2504,7 @@ a:focus-visible, button:focus-visible {
     }
 
     .hero__visual::after {
-        background: linear-gradient(180deg, rgba(245, 247, 245, 0.86) 0%, rgba(245, 247, 245, 0.94) 58%, rgba(245, 247, 245, 0.75) 100%);
+        background: linear-gradient(180deg, rgba(245, 247, 245, 0.76) 0%, rgba(245, 247, 245, 0.86) 58%, rgba(245, 247, 245, 0.62) 100%);
     }
 
     .main__wrapper {
