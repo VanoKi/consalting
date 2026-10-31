@@ -2329,10 +2329,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .services-slider .help__block {
-    grid-template-columns: none;
-    grid-auto-flow: column;
-    grid-auto-columns: clamp(300px, calc((100% - 32px) / 3), 380px);
-    grid-auto-rows: minmax(260px, auto);
+    display: flex;
     gap: 16px;
     width: 100%;
     height: auto;
@@ -2347,12 +2344,29 @@ a:focus-visible, button:focus-visible {
 }
 
 .services-slider .help__block > div {
+    display: flex;
+    min-width: 0;
+    min-height: 260px;
+    flex: 0 0 clamp(300px, calc((100% - 32px) / 3), 380px);
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    max-width: none;
     scroll-snap-align: start;
 }
 
 .services-slider .help__word {
-    padding: 108px 24px 28px;
+    width: 100%;
+    padding: 84px 24px 24px;
     font-size: clamp(24px, 2.3vw, 30px);
+}
+
+.services-slider .help__word::after {
+    top: 62px;
+}
+
+.services-slider .help__word::before {
+    top: 94px;
 }
 
 @media (max-width: 620px) {
@@ -2362,7 +2376,11 @@ a:focus-visible, button:focus-visible {
     }
 
     .services-slider .help__block {
-        grid-auto-columns: min(86%, 360px);
+        overflow-x: auto;
+    }
+
+    .services-slider .help__block > div {
+        flex-basis: min(86%, 360px);
     }
 
     .services-slider__button {
