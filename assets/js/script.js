@@ -109,8 +109,6 @@ if (servicesSlider) {
       updateControls();
       startAutoplay();
     });
-    servicesSlider.addEventListener('mouseenter', pauseAutoplay);
-    servicesSlider.addEventListener('mouseleave', startAutoplay);
     servicesSlider.addEventListener('focusin', pauseAutoplay);
     servicesSlider.addEventListener('focusout', (event) => {
       if (!servicesSlider.contains(event.relatedTarget)) startAutoplay();
