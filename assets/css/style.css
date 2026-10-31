@@ -2351,6 +2351,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .help__text--bottom {
+    margin: 0;
     padding: 28px 0 0;
     color: var(--color-ink);
     font-size: 16px;
@@ -2422,7 +2423,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .therapy__subtitle {
-    margin-bottom: 14px;
+    margin: 0 0 14px;
     color: var(--color-ink);
     font-size: 24px;
     line-height: 1.25;
@@ -2472,6 +2473,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .information__text--top {
+    margin: 0 0 14px;
     padding: 0;
     color: var(--color-accent);
     font-size: 13px;
@@ -2523,6 +2525,11 @@ a:focus-visible, button:focus-visible {
     color: var(--color-text-muted);
     font-size: 18px;
     line-height: 1.6;
+}
+
+.chapter__actions {
+    display: flex;
+    margin-top: 24px;
 }
 
 .chapter__images,
