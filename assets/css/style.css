@@ -1652,6 +1652,7 @@ body {
     height: auto;
     min-height: 0;
     overflow: hidden;
+    border-radius: 0;
     box-shadow: none;
 }
 
