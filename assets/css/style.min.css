@@ -2398,3 +2398,19 @@ a:focus-visible, button:focus-visible {
         transition: none;
     }
 }
+
+/* Make the hero photo fill its frame at every breakpoint. */
+.hero__visual {
+    position: relative;
+    isolation: isolate;
+}
+
+.hero__visual > .main__image {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+}
