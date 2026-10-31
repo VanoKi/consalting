@@ -2479,22 +2479,25 @@ a:focus-visible, button:focus-visible {
 .footer__wrapper {
     width: min(100%, 1200px);
     margin: 0 auto;
-    padding: 52px 24px 44px;
+    padding: 40px 24px 36px;
 }
 
 .footer__block {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     max-width: none;
-    justify-content: flex-start;
-    gap: clamp(48px, 10vw, 140px);
+    width: min(100%, 920px);
+    margin: 0 auto;
+    gap: clamp(32px, 7vw, 88px);
 }
 
 .footer__cell {
-    max-width: 340px;
+    max-width: none;
     padding: 0;
 }
 
 .footer__title {
-    margin-bottom: 18px;
+    margin: 0 0 14px;
     color: var(--color-accent);
     font-size: 13px;
     line-height: 1.4;
@@ -2512,6 +2515,30 @@ a:focus-visible, button:focus-visible {
 .footer__text_adress,
 .footer__tel_bottom {
     text-decoration: none;
+}
+
+.footer__contact-item {
+    display: grid;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.footer__contact-label {
+    color: var(--color-text-muted);
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.footer__contact-link {
+    width: fit-content;
+    color: var(--color-ink);
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.footer__contact-link:hover {
+    color: var(--color-accent);
 }
 
 .footer__tel_bottom:hover,
@@ -2597,7 +2624,8 @@ a:focus-visible, button:focus-visible {
     }
 
     .footer__block {
-        flex-direction: column;
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
         gap: 28px;
     }
 
