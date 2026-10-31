@@ -18,9 +18,9 @@
 <body>
 	<main class="main" id="top">
 		<header class="header">
-			<h1 class="header__logo">Делополис</h1>
-			<div class="header__burger" > </div>
-			<nav class="header__nav">
+			<div class="header__logo">Делополис</div>
+			<button class="header__burger" type="button" aria-label="Открыть меню" aria-controls="site-navigation" aria-expanded="false"></button>
+			<nav class="header__nav" id="site-navigation" aria-label="Основная навигация">
 				<ul class="header__list">
 					<li class="header__item active"><a href="#advantages" class="header__link">Наши преимущества</a></li>
 					<li class="header__item"><a href="#offers" class="header__link">Наши предложения</a></li>
@@ -28,7 +28,7 @@
 					<li class="header__item"><a href="#footer" class="header__link">Контакты</a></li>
 				</ul>
 			</nav>
-			<button class="header__btn"><a class="footer__tel" href="tel:+375447183363"> позвонить +375447183363</a></button>
+			<a class="header__btn" href="tel:+375447183363">Позвонить +375447183363</a>
 		</header>
 		<div class="container">
         <div class="main__wrap">
@@ -43,7 +43,7 @@
 				Наслаждайтесь жизнью и развивайте свой бизнес!</p>
 			
 		</div>
-		<img class="main__image" src="./assets/img/main.jpg" />
+		<picture><source srcset="./assets/img/main.webp" type="image/webp"><img class="main__image" src="./assets/img/main.jpg" alt=""></picture>
 	</div>
 	<a class="go_top" href="#top"><img src="./assets/img/arrow.svg" alt=""></a>
 </div>
@@ -56,14 +56,12 @@
 		<div class="description__wrapper" id="advantages">
 		<div class="description__content">
 			<h3 class="description__title"> Почему выгодно передать бухгалтерию на аутсорсинг</h3>
-			<p class="description__text text"> <strong> Качественные бухгалтерские услуги с каждым годом становятся все более востребованы. Это связанно с тем, что в современном мире возникает необходимость в передаче непрофильных функций внешним специализированным организациям с целью концентрации на основной деятельности. Именно поэтому наша компания «Делополис» предлагает грамотный аутсорсинг в области бухгалтерских услуг, а также услуги по сдаче отчетности в контролирующие органы на территории города Минска.
-			</strong></p><strong>
-		</strong></div><strong>
-	</strong></div><strong>
-		<img class="description__image" src="./assets/img/still.jpg" alt="">
-	</strong></div><strong>
-</strong></div><strong>
-	</strong></section>
+			<p class="description__text text">Качественные бухгалтерские услуги с каждым годом становятся все более востребованы. Это связанно с тем, что в современном мире возникает необходимость в передаче непрофильных функций внешним специализированным организациям с целью концентрации на основной деятельности. Именно поэтому наша компания «Делополис» предлагает грамотный аутсорсинг в области бухгалтерских услуг, а также услуги по сдаче отчетности в контролирующие органы на территории города Минска.</p>
+		</div>
+		<picture><source srcset="./assets/img/still.webp" type="image/webp"><img class="description__image" src="./assets/img/still.jpg" alt="" loading="lazy"></picture>
+		</div>
+		</div>
+	</section>
 	
 	<section class="help">
 		<div class="container">
@@ -71,8 +69,7 @@
 
 			<div class="help__text" id="offers">
 				<p class="help__text--left text">Мы предлагаем</p>
-				<p class="help__text--center text"> <strong> Наша компания оказывает полный пакет бухгалтерских услуг, подробно и глубоко вникает в ваш бизнес. Основной целью ООО «Делополис» является повышение эффективности работы каждого клиента, путем непрерывного ведения бухгалтерского учета; совершенствование ведение налогового учета и контроль за рисками. Выбирая наши услуги, Вы получите сокращение расходов на ведение бухгалтерского учета, оформление и сопровождение документации в соответствии с законодательством, восстановление бухгалтерского учета и ведение с нуля, расширение возможностей организации, консультация по другим интересуемым вас вопросах в области бухгалтерского учета. В процессе всего обслуживания с Вами будут сотрудничать высококвалифицированные специалисты.</strong>
-				</p>
+				<p class="help__text--center text">Наша компания оказывает полный пакет бухгалтерских услуг, подробно и глубоко вникает в ваш бизнес. Основной целью ООО «Делополис» является повышение эффективности работы каждого клиента, путем непрерывного ведения бухгалтерского учета; совершенствование ведение налогового учета и контроль за рисками. Выбирая наши услуги, Вы получите сокращение расходов на ведение бухгалтерского учета, оформление и сопровождение документации в соответствии с законодательством, восстановление бухгалтерского учета и ведение с нуля, расширение возможностей организации, консультация по другим интересуемым вас вопросах в области бухгалтерского учета. В процессе всего обслуживания с Вами будут сотрудничать высококвалифицированные специалисты.</p>
 
 				<h4 class="help__text--bottom text">Бухгалтерские услуги</h4>
 			</div>
@@ -89,7 +86,7 @@
 				<p class="help__word text">Бухгалтерия <br>  для IT</p>
 			</div>
 			<div class="help__block--Blue">
-				<P class="help__word text">Транспортные  <br>  компании</p>
+				<p class="help__word text">Транспортные  <br>  компании</p>
 			</div>
 			<div class="help__block--pink">
 				<p class="help__word text"> Строительные компании</p>
@@ -125,7 +122,7 @@
 	<section class="information">
 		<div class="information__wrapper">
 			<div class="information__img">
-				<img class="information__image" src="./assets/img/second.jpg" alt="">
+				<picture><source srcset="./assets/img/second.webp" type="image/webp"><img class="information__image" src="./assets/img/second.jpg" alt="" loading="lazy"></picture>
 			</div>
 			<div class="information__content">
 				<p class="information__text--top text">Бухгалтерское обслуживание</p>
@@ -141,11 +138,11 @@
 		<div class="container">
 		<div class="chapter__wrapper">
 			<div class="chapter__wrapper-text">
-				<h1 class="chapter__title">Стоимость услуг</h1>
-				<p class="chapter__text--center text"> Стоимость бухгалтерских услуг с каждым клиентом ВСЕГДА определяется ИНДИВИДУАЛЬНО и зависит от объема услуг, оказываемых нашим Бухгалтерским центром — а именно: от количества и содержания подготавливаемых и обрабатываемых нашими специалистами первичных учетных документов (ПУД); от объема и состава иного сопровождения.
+				<h2 class="chapter__title">Стоимость услуг</h2>
+				<p class="chapter__text--center text">Стоимость бухгалтерских услуг с каждым клиентом ВСЕГДА определяется ИНДИВИДУАЛЬНО и зависит от объема услуг, оказываемых нашим Бухгалтерским центром — а именно: от количества и содержания подготавливаемых и обрабатываемых нашими специалистами первичных учетных документов (ПУД); от объема и состава иного сопровождения.</p>
 			</div>
 			<div class="chapter__images">
-				<img class="chapter__img" src="./assets/img/1725109205851.jpg" alt="">
+				<picture><source srcset="./assets/img/1725109205851.webp" type="image/webp"><img class="chapter__img" src="./assets/img/1725109205851.jpg" alt="" loading="lazy"></picture>
 			</div>
 		</div>
 	</div>
@@ -165,7 +162,7 @@
 					<address class="footer__text text">
 						<a class="footer__text_adress" href="mailto:delopolisbel@gmail.com">delopolisbel@gmail.com</a>
 					</address>
-					<a class="footer__tel_bottom" href="tel:+3754471833Ы63"> +375447183363</a>
+					<a class="footer__tel_bottom" href="tel:+375447183363"> +375447183363</a>
 				</div>
 				<!-- <div class="footer__cell">
 					<h3 class="footer__title">OFFICE HOURS</h3>

@@ -670,6 +670,9 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     border: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 0 10px;
 }
 
 .header__title {
@@ -714,6 +717,13 @@ body {
 
 .header__burger {
     display: none;
+    border: 0;
+    background: transparent url("../img/burger_line_list_menu_nav_navigation_option_icon_123231.png") center / 32px 32px no-repeat;
+    cursor: pointer;
+}
+
+.header__burger.burger_active {
+    background-image: url("../img/cross.png");
 }
 
 .help__content {
