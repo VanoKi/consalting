@@ -1637,10 +1637,10 @@ body {
     z-index: 1;
     display: grid;
     grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
-    align-items: center;
+    align-items: stretch;
     gap: clamp(32px, 5vw, 72px);
     width: min(100%, 1200px);
-    min-height: 560px;
+    min-height: 0;
     margin: 0 auto;
     padding: 40px 24px;
 }
