@@ -48,3 +48,31 @@ if (goTop) {
     goTop.style.opacity = window.scrollY > 0 ? 1 : 0;
   });
 }
+
+const servicesSlider = document.querySelector('.services-slider');
+if (servicesSlider) {
+  const track = servicesSlider.querySelector('.help__block');
+  const previousButton = servicesSlider.querySelector('.services-slider__button--previous');
+  const nextButton = servicesSlider.querySelector('.services-slider__button--next');
+
+  if (track && previousButton && nextButton) {
+    const updateControls = () => {
+      previousButton.disabled = track.scrollLeft <= 1;
+      nextButton.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 1;
+    };
+
+    const move = (direction) => {
+      const firstCard = track.querySelector('[role="listitem"]');
+      if (!firstCard) return;
+      const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+      const motion = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+      track.scrollBy({ left: direction * (firstCard.getBoundingClientRect().width + gap), behavior: motion });
+    };
+
+    previousButton.addEventListener('click', () => move(-1));
+    nextButton.addEventListener('click', () => move(1));
+    track.addEventListener('scroll', updateControls, { passive: true });
+    window.addEventListener('resize', updateControls);
+    updateControls();
+  }
+}
