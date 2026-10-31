@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://delopolis.by/sitemap.xml
