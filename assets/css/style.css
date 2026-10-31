@@ -2146,7 +2146,38 @@ a:focus-visible, button:focus-visible {
     justify-content: center;
     width: auto;
     max-width: none;
+    border: 1px solid #a9c2bd;
+    background: #e5efed;
+    box-shadow: 0 8px 22px rgba(38, 54, 79, 0.08);
+    transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
     scroll-snap-align: start;
+}
+
+.services-slider .help__block > div:nth-child(even) {
+    border-color: #b7c4d4;
+    background: #e9eef5;
+}
+
+.services-slider .help__block > div:nth-child(3n) {
+    border-color: var(--color-accent-hover);
+    background: var(--color-accent);
+}
+
+.services-slider .help__block > div:nth-child(3n) .help__word {
+    color: #fff;
+}
+
+.services-slider .help__block > div:nth-child(3n) .help__word::after {
+    background: rgba(255, 255, 255, 0.48);
+}
+
+.services-slider .help__block > div:nth-child(3n) .help__word::before {
+    background: #fff;
+}
+
+.services-slider .help__block > div:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(38, 54, 79, 0.14);
 }
 
 .services-slider .help__word {
@@ -2188,8 +2219,13 @@ a:focus-visible, button:focus-visible {
         scroll-behavior: auto;
     }
 
-    .services-slider__button {
+    .services-slider__button,
+    .services-slider .help__block > div {
         transition: none;
+    }
+
+    .services-slider .help__block > div:hover {
+        transform: none;
     }
 }
 
