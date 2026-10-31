@@ -2605,6 +2605,12 @@ a:focus-visible, button:focus-visible {
     line-height: 1.4;
 }
 
+.footer__contact-values {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
 .footer__contact-link {
     width: fit-content;
     color: var(--color-ink);
